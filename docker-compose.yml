@@ -1,0 +1,13 @@
+
+
+version: '2'
+services:
+  node:
+    image: node:22.9.0-alpine
+    volumes:
+      - ./vue-plugin:/home/vue-projects/
+
+volumes:
+  vue-plugin:
+    name: vue-plugin
+    external: true
