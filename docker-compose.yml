@@ -1,13 +1,19 @@
 
-
 version: '2'
 services:
   node:
-    image: node:22.9.0-alpine
+    image: node-develop:latest
     volumes:
-      - ./vue-plugin:/home/vue-projects/
+      - my-app:/home/vue-projects/vpl-data-science/
+    ports:
+      - '5173:5173'
+    networks:
+      - network_final_project
+
+networks:
+  network_final_project:
+    name: network_final_project
+    driver: bridge
 
 volumes:
-  vue-plugin:
-    name: vue-plugin
-    external: true
+  my-app:
