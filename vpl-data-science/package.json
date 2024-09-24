@@ -12,11 +12,14 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.654.0",
+    "@aws-sdk/s3-request-presigner": "^3.657.0",
     "@codemirror/commands": "^6.6.2",
-    "@codemirror/lang-javascript": "^6.2.2",
     "@codemirror/lang-python": "^6.1.6",
     "@mdi/font": "5.9.55",
+    "aws-sdk": "^2.1691.0",
     "codemirror": "^6.0.1",
+    "pyodide": "^0.26.2",
     "roboto-fontface": "*",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3",

@@ -1,15 +1,15 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import App from '@/App.vue';
 import NotFound404 from '@/modules/common/pages/NotFound404.vue';
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHashHistory(import.meta.env.BASE_URL),
     routes: [
         // Landing
         {
             path: '/',
             name: 'landing',
-            component: () => import('@/modules/landing/layouts/LandingLayout.vue'),
+            component: () => import('@/modules/common/layouts/LandingLayout.vue'),
             children: [
                 {
                     path: '/',
@@ -19,12 +19,12 @@ const router = createRouter({
                 {
                     path: '/vpl-data-science',
                     name: 'VplDataScience',
-                    component: () => import('@/modules/landing/pages/VplDataScience.vue'),
+                    component: () => import('@/modules/vpl/pages/VplDataScience.vue'),
                 },
                 {
                     path: '/wiki',
                     name: 'VplWiki',
-                    component: () => import('@/modules/landing/pages/VplWiki.vue'),
+                    component: () => import('@/modules/wiki/pages/VplWiki.vue'),
                 },
                 {
                     path: '/about-us',

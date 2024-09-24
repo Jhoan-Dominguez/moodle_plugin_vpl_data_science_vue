@@ -1,0 +1,13 @@
+https://packaging.python.org/en/latest/tutorials/packaging-projects/#generating-distribution-archives
+https://pyodide.org/en/stable/usage/api/js-api.html
+https://pyodide.org/en/stable/usage/faq.html#how-can-i-control-the-behavior-of-stdin-stdout-stderr
+https://pyodide.org/en/stable/usage/file-system.html
+https://pyodide.org/en/0.20.0/usage/loading-packages.html
+
+https://v1.tailwindcss.com/components/buttons
+https://tailwindcss.com/docs/border-radius#pill-buttons
+
+
+https://github.com/aws-amplify/amplify-js/issues/11175
+https://github.com/aws-amplify/amplify-js/issues/9639#issuecomment-1376605159
+https://github.com/pyodide/pyodide/issues/3887
