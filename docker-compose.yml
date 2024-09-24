@@ -4,7 +4,7 @@ services:
   node:
     image: node-develop:latest
     volumes:
-      - my-app:/home/vue-projects/vpl-data-science/
+      - test-vol1:/home/vue-projects/vpl-data-science/
     ports:
       - '5173:5173'
     networks:
@@ -16,4 +16,4 @@ networks:
     driver: bridge
 
 volumes:
-  my-app:
+  test-vol1:

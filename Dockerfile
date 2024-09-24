@@ -1,7 +1,9 @@
 
 FROM node:22.9.0-alpine
 
-RUN npm install -g codemirror @vue/cli vue-router@4 vuetify
+RUN npm install -g @vue/cli
+RUN npm install -g vue-router@4
+
 RUN mkdir /home/vue-projects
 RUN mkdir /home/vue-projects/vpl-data-science
 RUN apk add --no-cache bash
@@ -9,7 +11,6 @@ RUN apk add --no-cache bash
 WORKDIR /home/vue-projects/vpl-data-science/
 COPY ./vpl-data-science/ /home/vue-projects/vpl-data-science/
 
-RUN npm install vite@latest -D
 RUN npm install
 
 EXPOSE 5173
